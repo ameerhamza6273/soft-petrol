@@ -80,9 +80,9 @@
                                 v-for="(date, index) in dateRange" :key="index">
                                 <div v-for="(item, index) in getScheduleForDate1(date)" :key="index" draggable="true"
                                     @dragstart="dragStart(item, 'first')"
-                                    class="bg-[#f76d65] p-0.5 px-2 rounded absolute top-1 w-[93%] ">
-                                    <p>{{ item.name }}</p>
-                                    <p>{{ item.time }}</p>
+                                    class="bg-[#f76d65] p-0.5 px-3 rounded absolute top-1  ">
+                                    <p class="text-sm">{{ item.name }}</p>
+                                    <p class="text-sm mt-[-2px]">{{ item.time }}</p>
                                 </div>
                             </td>
                         </tr>
@@ -115,8 +115,8 @@
                                 <div v-for="(item, index) in getScheduleForDate2(date)" :key="index" draggable="true"
                                     @dragstart="dragStart(item, 'second')"
                                     class="bg-[#aa7942] cursor-grab p-0.5 px-2 rounded">
-                                    <p>{{ item.name }}</p>
-                                    <p>{{ item.time }}</p>
+                                    <p class="text-sm">{{ item.name }}</p>
+                                    <p class="text-sm mt-[-2px]">{{ item.time }}</p>
                                 </div>
                             </td>
                         </tr>
