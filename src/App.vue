@@ -1,21 +1,15 @@
 <template>
   <div id="app" class="h-screen overflow-auto">
     <TopBar />
-    <!-- <Calander /> -->
-    <!-- <DateTable /> -->
 
   </div>
 </template>
 
 <script>
 import TopBar from './components/TopBar.vue';
-import Calander from './components/Calander.vue';
-import DateTable from './components/DateTable.vue';
 export default {
   components: {
     TopBar,
-    Calander,
-    DateTable,
   },
 };
 </script>
